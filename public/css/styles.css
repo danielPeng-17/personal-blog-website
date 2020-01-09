@@ -163,7 +163,7 @@ a[href^="http"]::after {
     }
 
     .wrapper{
-        padding: 13% 0;
+        padding: 13% 4%;
     }
 
     p{
@@ -197,7 +197,7 @@ a[href^="http"]::after {
         font-size: calc(20px + 1vmin) !important;
     }
     .wrapper{
-        padding: 15% 0;
+        padding: 15% 5%;
     }
 
     #welcome{
