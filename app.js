@@ -10,7 +10,10 @@ const app = express();
 const saltRounds = 10;
 let authenticated = false;
 let currUser;
-const port = process.env.PORT | 3000;
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 8000;
+}
 
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -156,7 +159,6 @@ app.post("/logout", function(req, res){
     currUser = null;
     res.redirect("/");
 });
-
 
 app.listen(port, function(){
     console.log(`Server started on port ${port}`);
