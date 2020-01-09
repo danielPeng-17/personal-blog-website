@@ -132,6 +132,8 @@ app.route("/compose")
             }else {
                 result.posts.push(newEntry);
                 result.save();
+                authenticated = false;
+                currUser = null;
                 res.redirect("/");
             }
         });
