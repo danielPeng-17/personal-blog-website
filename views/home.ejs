@@ -1,0 +1,24 @@
+<%- include("partials/header") %>
+    <div class="background">
+        <div class="background-blurr">
+            <h1 id="welcome" >WELCOME</h1>
+            <h5 id="intro" >Hi, My name is Daniel Peng and this is my personal blog project. 
+                If you want to see more of my projects, feel free to check out my 
+               <a class="github-link" href="https://github.com/danielpeng-17" target="_blank">Github</a>.
+            </h5>
+            <div class="btn-wrapper">
+                <button class="btn btn-outline-light circle-btn" id="scroll"><i class="fas fa-arrow-down circle-btn-arrow"></i></button>
+            </div>
+        </div>
+    </div>
+    <div id="home-wrapper">
+        
+        <% posts.forEach(function(post){ %>
+            <div class="post">
+                <h3 class="left-text"><%= post.title %></h3>
+                <p class="left-text"><%= post.text.substring(0, 100) %>. . . &nbsp;<a href= "/posts/<%= post.url %>">Read More</a></p>
+            </div>
+        <% }); %>
+    </div>
+    
+<%- include("partials/footer") %>

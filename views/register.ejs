@@ -1,0 +1,19 @@
+<%- include("partials/header") %>
+
+<div class="wrapper">
+    <h1>Register new user</h1>
+    <div class="input-section">
+        <form action="/register" method="POST">
+            <h3 class="left-text">Username</h3>
+            <input type="text" name="username" autocomplete="off" placeholder="Username" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+            <h3 class="left-text">Password</h3>
+            <input type="password" name="password" placeholder="Password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+            <h3 class="left-text">Confirm Password&nbsp;&nbsp;&nbsp;<span class="err"><%= err %></span></h3>
+            <input type="password" name="confirmPassword" placeholder="Confirm Password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+            <br>
+            <button type="submit" class="btn btn-dark"><h4>REGISTER</h4></button>
+        </form>
+    </div>
+</div>
+
+<%- include("partials/footer") %>

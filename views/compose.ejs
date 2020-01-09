@@ -1,0 +1,22 @@
+<%- include("partials/header") %>
+    <div class="wrapper">
+        <h1>Logged in as <%= username %></h1>
+        <div class="input-section">
+            <form action="/compose" method="POST">
+                <h3>Title</h3>
+                <input type="text" name="title" placeholder="Title here..." autocomplete="off" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                <h3>Journal Entry</h3>
+                <textarea placeholder="Text here..." name="text" class="form-control" aria-label="With textarea"></textarea>
+                <br>
+                <button class="btn btn-dark" type="submit"><h4>SUBMIT</h4></button>
+            </form>
+        </div>
+
+        <form action="/logout" method="POST">
+            <button class="btn btn-danger logout" type="submit"><h1>LOGOUT</h1></button>
+        </form>
+    </div>
+    
+
+
+<%- include("partials/footer") %>

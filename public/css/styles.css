@@ -1,0 +1,233 @@
+h1, h3{
+    line-height: 2;
+}
+
+textarea{
+    height: 30vh !important;
+}
+
+nav{
+    padding: 1% 6% 1% 5% !important;
+}
+
+a.github-link{
+    font-weight: 700 !important;
+    color: yellow;
+}
+
+a.github-link:hover{
+    color: rgb(216, 216, 43);
+}
+
+a[href^="http"]::after {
+    content: "\f0c1";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: calc(13px + 1vmin);
+}
+
+#home-wrapper{
+    width: 100%;
+    padding: 3% 7%;
+    justify-content: center;
+    text-align: center;
+}
+
+.wrapper{
+    width: 100%;
+    padding: 7% 0;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer{
+    text-align: center;
+    margin-top: 0;
+    padding: 3%;
+}
+
+.logout{
+    padding: 1%;
+    margin: 3% auto 0;
+    width: 45vw;
+    letter-spacing: 2px;
+}
+
+.left-text{
+    text-align: left;
+}
+
+.err{
+    color: rgb(233, 23, 23);
+    font-size: calc(13px + 0.5vmin);
+    display: inline-block;
+}
+
+.background{
+    width: 100%;
+    height: 90vh !important;
+    background-image: url("../images/flowers.jpeg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background-blurr{
+    width: 100%;
+    height: 90vh !important;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 13% 15% 0;
+    color: white;
+}
+
+
+.btn-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+}
+
+.circle-btn{
+    border-radius: 50%;
+    width: calc(13px + 10vmin);
+    height: calc(13px + 10vmin);
+    text-align: center;
+    padding: auto;
+    border: 3px solid white;
+}
+
+.circle-btn:focus{
+    box-shadow: none;
+}
+.circle-btn-arrow{
+    margin: auto;
+    font-size: calc(13px + 7vmin);
+}
+
+
+
+#welcome{
+    font-size: calc(25px + 5vmin);
+    font-weight: 600;
+    opacity: 1 !important;
+}
+
+#intro{
+    font-size: calc(13.3px + 2vmin);
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.input-section{
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: rgb(233, 233, 233);
+    padding: 5% 7%;
+    width: 45vw;
+}
+
+.post{
+    width: 100%;
+    border-radius: 5px;
+    background-color: rgb(233, 233, 233);
+    padding: 3% 5%;
+    margin: 1% 0 2%;
+}
+
+.initial{
+    font-family: 'Euphoria Script', cursive;
+    font-size: calc(13.3px + 2.5vmin);
+}
+
+.navbar-item{
+    margin: 0 4% !important;
+}
+
+
+@media screen and (min-width: 701px) and (max-width: 1024px){
+    a.nav-link{
+        font-size: calc(13.3px + 1.4vmin) !important;
+    }
+
+    a.navbar-brand{
+        font-size: calc(13.3px + 1.4vmin) !important;
+    }
+
+    nav{
+        padding: 3% 6% 3% 5% !important;
+    }
+
+    p{
+        font-size: calc(13.3px + 1.3vmin);
+    }
+
+    .wrapper{
+        padding: 13% 0;
+    }
+
+    p{
+        font-size: calc(13.3px + 1vmin);
+    }
+    
+    #welcome{
+        font-size: calc(25px + 3vmin);
+    }
+
+    #intro{
+        font-size: calc(13px + 1.8vmin);
+    }
+
+    .background{
+        height: 53vh !important;
+    }
+
+    .background-blurr{
+        height: 53vh !important;
+        padding: 15% 11% 0;
+    }
+
+    .input-section{
+        width: 80vw !important;
+    }
+}
+
+@media screen and (max-width: 700px){
+    h1{
+        font-size: calc(20px + 1vmin) !important;
+    }
+    .wrapper{
+        padding: 15% 0;
+    }
+
+    #welcome{
+        font-size: calc(25px + 1.2vmin);
+    }
+
+    #intro{
+        font-size: calc(13px + 0.7vmin);
+    }
+
+    .circle-btn{
+        text-align: center;
+        height: calc(13px + 15vmin);
+        min-width: max-content;
+    }
+
+    textarea{
+        height: 25vh !important;
+    }
+
+    .input-section{
+        width: 80vw;
+    }
+
+    .background{
+        height: 53vh !important;
+    }
+
+    .background-blurr{
+        height: 53vh !important;
+        padding: 15% 11% 0;
+    }
+}
